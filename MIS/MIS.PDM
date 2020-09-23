@@ -1,0 +1,111 @@
+[Root]
+Most Recent Package=CSU MIS Package
+
+
+[Package|CSU MIS Package|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\MIS\CSU MIS SETUP
+
+[Package|CSU MIS Package|Configure DAO ISAMs]
+Applicable=No
+
+[Package|CSU MIS Package|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|CSU MIS Package|Files Found]
+
+[Package|CSU MIS Package|Files Released]
+
+[Package|CSU MIS Package|Missing Dependency Information]
+C:\WINDOWS\system32\MSSTDFMT.DLL=
+C:\Program Files\Common Files\System\ado\msado20.tlb=
+
+[Package|CSU MIS Package|Out-of-Date Dependency Information]
+
+[Package|CSU MIS Package|Files Added]
+c:\mis\provider.ico=
+
+[Package|CSU MIS Package|Files Removed]
+
+[Package|CSU MIS Package|Files In Project]
+C:\MIS\MIS.exe=Yes
+C:\WINDOWS\system32\msvbvm60.dll=Yes
+C:\WINDOWS\system32\oleaut32.dll=Yes
+C:\WINDOWS\system32\olepro32.dll=Yes
+C:\WINDOWS\system32\asycfilt.dll=Yes
+C:\WINDOWS\system32\stdole2.tlb=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Program Files\Common Files\Designer\MSDERUN.DLL=Yes
+C:\Program Files\Common Files\System\ado\msado20.tlb=Yes
+C:\WINDOWS\system32\MSBIND.DLL=Yes
+C:\WINDOWS\system32\MSSTDFMT.DLL=Yes
+C:\WINDOWS\system32\MSCOMCTL.OCX=Yes
+C:\WINDOWS\system32\MSCOMCT2.OCX=Yes
+C:\WINDOWS\system32\MSDATGRD.OCX=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\system32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\MIS\PROVIDER.ICO=Yes
+
+[Package|CSU MIS Package|Configure Registry Files]
+Applicable=No
+
+[Package|CSU MIS Package|Configure Remote Servers]
+Applicable=No
+
+[Package|CSU MIS Package|Install Locations]
+C:\MIS\MIS.exe=$(AppPath)
+C:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\oleaut32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\olepro32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\asycfilt.dll=$(WinSysPathSysFile)
+C:\WINDOWS\system32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Common Files\Designer\MSDERUN.DLL=$(CommonFiles)\designer
+C:\Program Files\Common Files\System\ado\msado20.tlb=$(WinSysPath)
+C:\WINDOWS\system32\MSBIND.DLL=$(WinSysPath)
+C:\WINDOWS\system32\MSSTDFMT.DLL=$(WinSysPath)
+C:\WINDOWS\system32\MSCOMCTL.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSCOMCT2.OCX=$(WinSysPath)
+C:\WINDOWS\system32\MSDATGRD.OCX=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\MIS\PROVIDER.ICO=$(AppPath)
+
+[Package|CSU MIS Package|Configure Shared Files]
+Applicable=Yes
+C:\MIS\MIS.exe=No
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+C:\MIS\PROVIDER.ICO=No
+
+[Package|CSU MIS Package|Distribution]
+Type=single
+Size=
+Title=CSU MIS
+
+[Package|CSU MIS Package|IconGroups]
+Group0=MIS
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|CSU MIS Package|MIS]
+Icon1=MIS.EXE
+Title1=MIS
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|CSU MIS Package|Package]
+PackageFolder=C:\MIS\CSU MIS SETUP
+ProjectFolder=C:\MIS
+ServerSideCab=
+File1=C:\MIS\CSU MIS SETUP\setup.exe
+File2=C:\MIS\CSU MIS SETUP\Setup.Lst
+File3=C:\MIS\CSU MIS SETUP\MIS.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
