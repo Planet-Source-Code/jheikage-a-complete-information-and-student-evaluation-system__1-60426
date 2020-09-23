@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>USER'S MANUAL</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="MISCss.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<img src="misc/Target_Gabe.gif">
+HX SOLUTIONS®
+<code style="Font:10pt Arial;width:100%">Building Outstanding Software Solutions.</code>
+</span><br/>
+<H1><img src="misc/PROVIDER.ICO">HX SEIS version 1.0.0 Guide Book</H1>
+<span class="Title" style="width:100%;Font:Bold;cursor:Hand;"><img src="misc/SECU.GIF" border="0pt" width="40px" height="40px">USER'S MANUAL</span>
+<hr>
+<table border="1" cellpadding="1" cellspacing="1" bordercolor="#333333" width="100%">
+<tr valign="top">
+	<td width="25%">
+	<!--This is the menu-->
+	<div style="container:Positioned;width:100%;border: white 1.2pt ridge;" class="sidebarheader">
+		<span class="subtitle" style="Text-align:center;border:white 1.3pt Outset;Width:100%;filter:DrowShadow(offsetx=45,direction=45,color=Gray);color:White">
+		SELECT MENU HERE
+		</span>
+		<a class="sidebarHeader" id="Menu1" href="#getting">Getting Started</span><br/>
+		<a class="sidebarHeader" id="Menu2" href="#SPI">Student Personal Information</span><br/>
+		<a class="sidebarHeader" id="Menu3" href="#CUR">Curriuclum Module</span><br/>
+		<a class="sidebarHeader" id="Menu4" href="#CRS">Course Module</span><br/>
+		<a class="sidebarHeader" id="Menu5" href="#SCR">Student College Records</span><br/>
+		<a class="sidebarHeader" id="Menu6" href="#EVAL">Evaluation Module</span><br/>
+		<a class="sidebarHeader" id="Menu7" href="#Rep">Report Module</span><hr/>
+		<a class="sidebarHeader" id="Menu8" href="MISMain.html">Back to Main</span>
+	</div>
+	  <span style="Width:100%;Background-color:#454545;color:white"> Questions? 
+      Mail me at: <a href="mailto:iehjsucker@yahoo.com"><strong>iehjsuckers@yahoo.com</strong></a>! 
+      visit my site at <a href="e.domaindlx.com/iehjsucker"><strong>e.domaindlx.com/iehjsucker</strong></a> 
+      </span>
+	   </td>
+	<td style="text-Align:Justify">
+	<span class="title" style="border:gray 1pt outset" id="Intro">INTRODUCTION</span><br/>
+	<span class="subtitle" style="width:100%">
+	This Manual provides a step-by-step operation of the entire SIES. This will serve as a guide for users of the said system. SIES is a Client-Server application and deals with student records and grades and also, report generation for school years and semesters.<br/><br/>
+	The system is composed of 4 different modules namely Student Personal Information (SPI), Student College Record (SCR), Curricula, Student Evaluation System (SE) and Reports Module.<br/><br/>
+	Each module will be taken here to explain how they work and operate over the client side application.
+	</span><hr/>
+	<span class="title" style="border:gray 1pt outset" id="Getting">Getting Started</span><br/>
+	<span class="subtitle" style="width:100%">
+	The system provides a simple but tight system security (Security issues are discussed at the server side manual, not to be discussed to users!). All user accounts are stored and managed by the Administrator in the SQL SERVER (version 7). Upon loading, user is asked to enter the server you want to connect and a user name and a password. Server name is the name of the server where your database is stored. With the server, you can now log in if you have your user name and account present in the server itself.
+	<br/>
+	<code style="Text-Align:center;width:100%"><img src="Client Manual_files/image002.jpg"/><br/>Figure 1.1</code>
+	Supply all the fields and click ok. The application will resolve the server. If the server is not present, you can't load the system. A correct server and user name and password will continue loading the system.
+	<code style="Text-Align:center;width:100%"><img src="Client Manual_files/image004.jpg" width="600"/><br/>Figure 1.2</code>
+	Figure 1.2 is the main form of the Application. It consists of three parts, the Modules, Miscellaneous and the Exit portion.
+	</span>
+	<a href="#Intro"><strong>Back to top</strong></a><hr/>
+	<span class="title" style="border:gray 1pt outset" id="SPI">Student Personal Information Module (SPI)</span><br/>
+	<span class="subtitle" style="width:100%">
+	<code style="Text-Align:center;width:100%"><img src="Client Manual_files/image006.jpg"/><br/>Figure 1.3</code>
+	Figure 1.3 displays the main form for SPI module. The form contains 3 portion, Query portion, Record display and command groups.
+	<br/><br/>
+	<strong class="box1">Query Portion </strong> - This portion allow the user to select records present in your database. There are 2 parts of this portion, the A-Z buttons and Query part. A-Z button, as its name requires, when trying to click one button, all records starting with the corresponding letter will be displayed in the Record display box. By default, A is clicked when you load this module. The query box is a more advance record displaying part. Users are able to type a portion or an approximate value or you may type the entire word to search. But first, select the Field you want your query is to be compared. Approximate comparison must click the like box. This will enable you to query approximate matches. You should also add wild cards to enable approximate query (%). Wild cards must be used (e.g. las% will query lastimoso, las pinas, lasalet… all records that starts with las). Basically, the approximate matching is slower that exact matching. To continue, click go. This will display (if something 	matches your query) records matching your query.<br/><br/>
+	<strong class="box1">Display portion</strong> - This portion will display records queried. The display portion displays ID Number, Last Name, First Name and Middle Name.<br/><br/>
+	<strong class="box1">Command Group</strong> - This contains the available commands in the said module. It includes Adding Records, Editing Records, Deleting, Printing, College Record (Point to SCR Module) and Evaluating (Point to Evaluation Module).<br/><br/>
+	<strong class="box1">Adding Records</strong> - Adds new Student Personal Information Record to your system (At least if you are permitted to do so.).<br/><br/>
+	<strong class="box1">Editing Records</strong> - Permits you to edit an existing Record (if you are permitted by the server). This requires a current record. You must select a record/highlight a record in the display record portion box and click Edit or double click or right click and click edit.<br/><br/>
+	<strong class="box1">Deleting Records</strong> - Deleting records is one of the most critical part of a database program. Deleting a Student Record (Personal Information) will also delete all its college record. You can only delete if you are permitted by the server. But before you can delete, you are asked to enter a password (security purpose). If you did not supply the correct password, you are not allowed to delete the record.<br/><br/>
+	<strong class="box1">Printing</strong> - This will print the Personal Information of the selected student (The one highlighted in the Display record portion).<br/><br/>
+	Other parts (College records and Evaluation) are other modules of the program. Please refer to their specific module for guidance.
+	</span>
+	<a href="#Intro"><strong>Back to top</strong></a><hr/>
+	<span class="title" style="border:gray 1pt outset" id="CUR">Curriculum Module</span><br/>
+	<span class="subtitle" style="width:100%">
+	<code style="Text-Align:center;width:100%"><img src="Client Manual_files/image008.jpg"/><br/>Figure 1.4</code>
+	Figure 1.4 is the Form for Curriculum adding. This Form contains 3 commands, Load, Add and Delete. You may not see the Edit portion. Editing is done by double clicking the Display Record portion (if there is a record to be edited). The form contains 3 parts, School Year Information, Course Portion and Display Record Portion. School Year Information contains the School Year and Semester you want to load in your Display Record Portion. The Course Portion contains the Course and Year level you want to display (if you want to display all records for a certain school year, semester and course, check the show all year level box). Click the Load Subjects button to load the records.<br/><br/>
+	The active School year, semester, course and year level is the only active record for adding (e.g. SY 2000-2001, SEM - 2nd, Course - BSIT, Yr - 1, here you can only add subjects here).<br/><br/>
+	Commands available are:<br/><br/>
+	<strong class="box1">Load Subjects</strong> - Loads the subjects for the specified school year, semester, course and (optional) year level. <br/>
+	<strong class="box1">Add</strong> - Adds a new subject for a specified school year, semester, course and (optional) year level.<br/>
+	<strong class="box1">Delete</strong> - Deletes a subject for a specified school year, semester, course and (optional) year level.<br/>
+	<strong class="box1">Edit (not shown)</strong> - to activate, double click a record in the display box. Edits a record.<br/><br/>
+	<span style="Font:Bold 16pt">UPDATES! (THE SUBJECTS OFFERED TABLE ADDED)</span><br/>
+	It must be clear the difference between curriculum and subjects offered in a school year. A curriculum is set of subjects prepared every year to be followed by students. This does not mean that all the subjects are to be offered that school year. Take note that each student follows their own curriculum, thus, subjects offered in a school year are mixture of different subjects from different curricula. A good example is that, A fourth year subjects on Curriculum Year 2001-2002 will be offered on School Year 2005-2006,  and first year subjects for curriculum year 2005-2006 are offered in school year 2005-2006. With this complexity, developers separated a table for Subjects offered and Curricula. Subjects offered are used for adding subjects for college records and curricula is used for evaluation and of course, for adding subjects to subjects offered in a certain school year.<br/><br/>
+	The module is still considered as add on module for curricula, but it is separated. The same functionalities, techniques and procedures are used here just like in your curricula module. For information on how to use this add on module, please refer to curricula module.
+	</span>
+	<a href="#Intro"><strong>Back to top</strong></a><hr/>
+	<span class="title" style="border:gray 1pt outset" id="CRS">Course Module</span><br/>
+	<span class="subtitle" style="width:100%">
+	<code style="Text-Align:center;width:100%"><img src="Client Manual_files/image010.jpg"/><br/>Figure 1.5</code>
+	Figure 1.5 is a form for adding courses in your MIS. This is used in adding of curriculum, College records, Personal Information, Report generation and evaluation. It is the simplest part of the application, by mearly looking at the form explains everything about it.
+	</span>
+	<a href="#Intro"><strong>Back to top</strong></a><hr/>
+	<span class="title" style="border:gray 1pt outset" id="SCR">Student College Records</span><br/>
+	<span class="subtitle" style="width:100%">
+	<code style="Text-Align:center;width:100%"><img src="Client Manual_files/image012.jpg"/><br/>Figure 1.6</code>
+	Figure 1.6 shows the form for Student College records. This form is activated by simply clicking the College Record button in your SPI Form (it will only pop up if you have selected a student in the display portion). There are 5 portions found in this form namely, School year, Course, Display, Commands and Summary portion.<br/><br/>
+	<strong class="box1">School Year</strong> - This portion talks about the school year and semester you want to view for the selected student. Just select here the necessary information then proceed at the course portion.<br/><br/>
+	<strong class="box1">Course</strong> - As its name implies, it talks about the course and year. After setting the School Year and Course you can now click load subjects to load all the records found in your display portion.<br/><br/>
+	<strong class="box1">Display</strong> - Display what is being queried or selected (SY, SEM, COURSE, YR).<br/><br/>
+	<strong class="box1">Commands</strong> - The commands present here are:<br/><br/>
+	<strong class="box1">New</strong> - Adds a new subject on the selected School Year, Semester, Course and Year. You can click the new button or right click the display portion and click new. A dialog box appears for adding. Fill up the form and click ok.<br/><br/>
+	<strong class="box1">Edit</strong> - Unless you have selected a subject in the display portion, you cannot edit. Edit enables you to edit the current subject (usually use to update grades).<br/><br/>
+	<strong class="box1">Delete</strong> - Deletes the selected subject (only if you are permitted).<br/><br/>
+	<strong class="box1">Print</strong> - prints the college record of the selected student (not yet implemented, you may want to code it your self).
+	The move Subject to another School Year and Semester is an invisible command, you can only see this when you right click the display portion. The selected subject will be transferred to a certain school year and semester, depending on your settings. A wizard will actually help you do this.<br/><br/>
+	<strong class="box1">Summary Portion</strong> - The summary portion has a retrieve button. Click this to have a brief summary of all the records of the student (format is SY SEM Course and Yr e.g. 2001-2002 2nd BSIT 1). You can use this for faster query building.<br/><br/>
+	</span>
+	<a href="#Intro"><strong>Back to top</strong></a><hr/>
+	<span class="title" style="border:gray 1pt outset" id="EVAL">Evaluation Module</span><br/>
+	<span class="subtitle" style="width:100%">
+	<code style="Text-Align:center;width:100%"><img src="Client Manual_files/image014.jpg"/><br/>Figure 1.7</code>
+	Figure 1.7 represents the Evaluation Module. It contains 2 display portion, the Subjects taken by the selected student and the Curriculum you want to use for evaluation.<br/><br/>
+	Evaluation is the process of checking subjects for student if he/she is qualified to take the subjects or not. This depends on the pre requisites of the subjects being evaluated. An evaluation report is generated after evaluation (not printed just a window summary). <br/><br/>
+	You can activate this form by selecting a student in your SPI module form and click the evaluate student button.<br/><br/>
+	The load Subject (Left side) is used to load subjects of the selected student (But automatically if you have loaded the curriculum and hit the Evaluate subjects, this will be loaded, and basically it is not necessary in processing. It is just used to show the user a visual representation of the records being taken by the student.).<br/><br/>
+	To complete evaluation, you must load a curriculum in which you want to evaluate subjects to be taken by the student. Select a school year and course and hit the load subjects button just bellow the curriculum display portion. After that, all the records of the said curriculum and course will appear. Select the subjects you want to evaluate (Multiple select is permitted, hold the control key and select records). After selecting the necessary records, click the Evaluate subjects and the system will process it. An evaluation report will appear. You can determine which subjects are allowed to be taken by the student. Note that the evaluation report is not a printed output.<br/><br/>
+	</span>
+	<a href="#Intro"><strong>Back to top</strong></a><hr/>
+	<span class="title" style="border:gray 1pt outset" id="REP">Report Module</span><br/>
+	<span class="subtitle" style="width:100%">
+	<code style="Text-Align:center;width:100%"><img src="Client Manual_files/image016.jpg"/><br/>Figure 1.8</code>
+	Figure 1.8 represents the Summary report module. This will generate an HTML formatted report for certain school year and semester. You can choose the data to be included in the report (e.g. sex, civil status, age etc.). You can generate report by course and year level and of course, with the entire department (this has something to do with the school in which I created this program). Reports on total number of passed and failed students are not included (may be some other time).
+	</span>
+	<a href="#Intro"><strong>Back to top</strong></a><hr/>
+	</td>
+</tr>
+</table>
+<hr>
+<span style="text-align:Right;width:100%">
+HX Tech® Building Outstanding Technology<br>
+Iehjsuckers Sucks!<br>
+2005
+</span>
+</body>
+</html>
